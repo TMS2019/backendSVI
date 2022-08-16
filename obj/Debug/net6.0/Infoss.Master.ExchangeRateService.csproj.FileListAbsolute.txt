@@ -162,3 +162,10 @@ C:\Users\perdana\Desktop\SVI\backend\Infoss.Master.ExchangeRateService\bin\Debug
 C:\Users\perdana\Desktop\SVI\backend\Infoss.Master.ExchangeRateService\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\perdana\Desktop\SVI\backend\Infoss.Master.ExchangeRateService\bin\Debug\net6.0\xunit.abstractions.dll
 C:\Users\perdana\Desktop\SVI\backend\Infoss.Master.ExchangeRateService\bin\Debug\net6.0\xunit.core.dll
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.csproj.AssemblyReference.cache
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.AssemblyInfoInputs.cache
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.AssemblyInfo.cs
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.csproj.CoreCompileInputs.cache
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\perdana\Desktop\SVI\repo\backendSVI\obj\Debug\net6.0\Infoss.Master.ExchangeRateService.MvcApplicationPartsAssemblyInfo.cache

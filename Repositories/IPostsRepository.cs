@@ -4,10 +4,10 @@ namespace Infoss.Master.ExchangeRateService.Repositories
 {
     public interface IPostsRepository
     {
-        public Task<List<Mposts>> Read(int pageNo, int pageSize);
-        public Task<Mposts> Read(int id);
-        public Task<string> Create(Mposts Mpost);
-        public Task<string> Update(Mposts Mpost);
+        public Task<List<MPosts>> Read(int pageNo, int pageSize);
+        public Task<MPosts> Read(int id);
+        public Task<string> Create(MPosts Mpost);
+        public Task<string> Update(MPosts Mpost);
         public Task<string> Delete(int id);
 
     }

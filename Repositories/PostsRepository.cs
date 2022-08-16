@@ -14,7 +14,7 @@ namespace Infoss.Master.ExchangeRateService.Repositories
             connectionString = configuration.GetConnectionString("SqlConnection");
         }
 
-        public async Task<List<Mposts>> Read(int pageNo, int pageSize)
+        public async Task<List<MPosts>> Read(int pageNo, int pageSize)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@Id", 0);
@@ -23,12 +23,12 @@ namespace Infoss.Master.ExchangeRateService.Repositories
 
             using (var connection = new SqlConnection(connectionString))
             {
-                IEnumerable<Mposts> country = await connection.QueryAsync<Mposts>("master.SP_Posts_Read", parameters, commandType: CommandType.StoredProcedure);
+                IEnumerable<MPosts> country = await connection.QueryAsync<MPosts>("master.SP_Posts_Read", parameters, commandType: CommandType.StoredProcedure);
                 return country.ToList();
             }
         }
 
-        public async Task<Mposts> Read(int id)
+        public async Task<MPosts> Read(int id)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@Id", id);
@@ -37,23 +37,23 @@ namespace Infoss.Master.ExchangeRateService.Repositories
 
             using (var connection = new SqlConnection(connectionString))
             {
-                return await connection.QueryFirstOrDefaultAsync<Mposts>("master.SP_Posts_Read", parameters, commandType: CommandType.StoredProcedure);
+                return await connection.QueryFirstOrDefaultAsync<MPosts>("master.SP_Posts_Read", parameters, commandType: CommandType.StoredProcedure);
             }
         }
 
 
-        public async Task<string> Create(Mposts mpost)
+        public async Task<string> Create(MPosts mpost)
         {
             try
             {
                 var parameters = new DynamicParameters();
                 parameters.Add("@RowStatus", mpost.RowStatus);
-                parameters.Add("@Title", mpost.Title);
-                parameters.Add("@Context", mpost.Context);
-                parameters.Add("@Category", mpost.Category);
+                parameters.Add("@Title", mpost.title);
+                parameters.Add("@Context", mpost.context);
+                parameters.Add("@Category", mpost.category);
                 parameters.Add("@status", mpost.status);
                 parameters.Add("@Created_date", mpost.Created_date);
-                parameters.Add("@Updated_date", mpost.Updated_date);
+                parameters.Add("@Updated_date", mpost.updated_date);
                 using (var connection = new SqlConnection(connectionString))
                 {
                     var affectedRows = await connection.ExecuteAsync("master.SP_Posts_Create", parameters, commandType: CommandType.StoredProcedure);
@@ -66,7 +66,7 @@ namespace Infoss.Master.ExchangeRateService.Repositories
             }
         }
 
-        public async Task<string> Update(Mposts mpost)
+        public async Task<string> Update(MPosts mpost)
         {
             try
             {
@@ -76,12 +76,12 @@ namespace Infoss.Master.ExchangeRateService.Repositories
                     var parameters = new DynamicParameters();
                     parameters.Add("@RowStatus", mpost.RowStatus);
                     parameters.Add("@Id", mpost.Id);
-                    parameters.Add("@Title", mpost.Title);
-                    parameters.Add("@Context", mpost.Context);
+                    parameters.Add("@Title", mpost.title);
+                    parameters.Add("@Context", mpost.context);
                     parameters.Add("@status", mpost.status);
-                    parameters.Add("@Category", mpost.Category);
+                    parameters.Add("@Category", mpost.category);
                     parameters.Add("@Created_date", mpost.Created_date);
-                    parameters.Add("@Updated_date", mpost.Updated_date);
+                    parameters.Add("@Updated_date", mpost.updated_date);
 
                     var affectedRows = await connection.ExecuteAsync("master.SP_Posts_Update", parameters, commandType: CommandType.StoredProcedure);
                     return "Affected Rows: " + affectedRows.ToString();
