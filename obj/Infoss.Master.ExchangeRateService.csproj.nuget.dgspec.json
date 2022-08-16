@@ -28,9 +28,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Infoss.Master.ERateModel\\Models.csproj": {
-                "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Infoss.Master.ERateModel\\Models.csproj"
-              },
               "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Models\\Models.csproj": {
                 "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Models\\Models.csproj"
               }

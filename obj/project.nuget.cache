@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "2hs6DLVkreMa0SDbdbm+jiDqXZV4629W4dwyvab08wIhgrXCxP9X6+r1vmMiwGNYbIlHAcZI7Hx184zLpemWxw==",
-  "success": false,
+  "dgSpecHash": "bcsVeBIt5SdXn6dGchvP0fQGey7FyrUsZ4HCCbkNhmgIvM7R+TlGm9SwyvA4Svhei4BIORSuOQSP2r/9Xknq6Q==",
+  "success": true,
   "projectFilePath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\backendSVI\\Infoss.Master.ExchangeRateService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perdana\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
@@ -27,15 +27,6 @@
     "C:\\Users\\perdana\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\perdana\\Desktop\\SVI\\repo\\Infoss.Master.ERateModel\\Models.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Infoss.Master.ERateModel\\Models.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

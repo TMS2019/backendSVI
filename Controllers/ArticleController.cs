@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Infoss.Master.ExchangeRateService.Repositories;
 using Infoss.Master.ExchangeRateService.Models;
-using static Infoss.Master.ExchangeRateService.Models.Mposts;
+ 
 
 namespace Infoss.Master.ExchangeRateService.Controllers
 {
@@ -25,14 +25,14 @@ namespace Infoss.Master.ExchangeRateService.Controllers
 
         // GET <ExchangeRateController>/5
         [HttpGet("{id}")]
-        public async Task<Mposts> Get(int id)
+        public async Task<MPosts> Get(int id)
         {
             return await iPostsRepository.Read(id);
         }
 
         // GET <ExchangeRateController>/1/20
         [HttpGet("{pageNo}/{pageSize}")]
-        public async Task<IEnumerable<Mposts>> Get(int pageNo, int pageSize)
+        public async Task<IEnumerable<MPosts>> Get(int pageNo, int pageSize)
         {
             return await iPostsRepository.Read(pageNo, pageSize);
         }
@@ -59,7 +59,7 @@ namespace Infoss.Master.ExchangeRateService.Controllers
         //    };
         //}
         [HttpPost]
-        public async Task<string> Post(Mposts mposts)
+        public async Task<string> Post(MPosts mposts)
         {
             
             return await iPostsRepository.Create(mposts);
@@ -67,7 +67,7 @@ namespace Infoss.Master.ExchangeRateService.Controllers
 
         // PUT <ExchangeRateController>
         [HttpPut]
-        public async Task<string> Put(Mposts mposts)
+        public async Task<string> Put(MPosts mposts)
         {
             return await iPostsRepository.Update(mposts);
         }
