@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bcsVeBIt5SdXn6dGchvP0fQGey7FyrUsZ4HCCbkNhmgIvM7R+TlGm9SwyvA4Svhei4BIORSuOQSP2r/9Xknq6Q==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\backendSVI\\Infoss.Master.ExchangeRateService.csproj",
+  "dgSpecHash": "UfR50GA+KHgDh4/Ykvn6Yb+n6xNE8NPis1UMQfSvM9yHHggVWJ4wK7TM68zEhjRkruQIV5Td7oWdr+QDCK2+jA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Infoss.Master.ExchangeRateService\\Infoss.Master.ExchangeRateService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perdana\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\perdana\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
@@ -27,6 +27,15 @@
     "C:\\Users\\perdana\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

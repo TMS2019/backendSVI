@@ -266,16 +266,6 @@
             "rid": "win"
           }
         }
-      },
-      "Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Models.dll": {}
-        }
       }
     }
   },
@@ -815,17 +805,12 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Models/1.0.0": {
-      "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj",
       "Dapper >= 2.0.123",
-      "Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "Swashbuckle.Core >= 5.6.0",
       "System.Data.SqlClient >= 4.8.3"
@@ -837,11 +822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\backendSVI\\Infoss.Master.ExchangeRateService.csproj",
+      "projectUniqueName": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Infoss.Master.ExchangeRateService\\Infoss.Master.ExchangeRateService.csproj",
       "projectName": "Infoss.Master.ExchangeRateService",
-      "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\backendSVI\\Infoss.Master.ExchangeRateService.csproj",
+      "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Infoss.Master.ExchangeRateService\\Infoss.Master.ExchangeRateService.csproj",
       "packagesPath": "C:\\Users\\perdana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\backendSVI\\obj\\",
+      "outputPath": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Infoss.Master.ExchangeRateService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\perdana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -858,8 +843,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\repo\\Models\\Models.csproj"
+            "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj"
             }
           }
         }
@@ -914,6 +899,15 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\perdana\\Desktop\\SVI\\backend\\Models\\Models.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
